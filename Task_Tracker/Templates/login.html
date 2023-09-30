@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body{
+            background-color: #b4cfdbba;
+            font-family: 'Arial';
+        }
+        .login{
+            width: 400px;
+            overflow: hidden;
+            margin: auto;
+            margin: 20 0 0 450px;
+            padding: 80px;
+            background-color: #2a5081;
+            border-radius: 15px;
+        }
+        span{
+            color: white;
+            font-size: 17px;
+        }
+        label{
+            color: #08ffd1;
+            font-size: 17px;
+        }
+        #username{
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        #password{
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+        #login{
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 17px;
+            padding-left: 7px;
+            color: blue;
+            transition-property: linear;
+        }
+        #login:hover{
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>LOGIN PAGE</h1>
+        <div class="login">
+            <form method="POST" action="/login">
+                <label for="username">Username:</label>
+                <br>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+                <br>
+                <input type="submit" id="login" name="login" value="Login"><br><br>
+                <br>
+                <span>Thank You For Login</span>
+            </form>
+        </div>        
+    </center>
+    
+</body>
+</html>
